@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { GifsService } from 'src/app/gifs/services/gifs.service';
 
+
 @Component({
   selector: 'share-sidebar',
   templateUrl: './sidebar.component.html',
@@ -16,6 +17,10 @@ export class SidebarComponent {
 
     return this.gifsService.tagHistory;
   }
+  searchTag(){
+    const newTag=this.tagSideBar.toString;
+    this.gifsService.tagHistory;
+
 
 }
 
